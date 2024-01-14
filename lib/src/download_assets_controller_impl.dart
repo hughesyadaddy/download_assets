@@ -103,9 +103,9 @@ class DownloadAssetsControllerImpl implements DownloadAssetsController {
             totalProgress += increment;
             previousProgress = progress;
 
-            if (totalProgress >= _threshold || increment <= 0.1) {
-              return;
-            }
+            // if (totalProgress >= _threshold || increment <= 0.1) {
+            //   return;
+            // }
 
             onProgress?.call(totalProgress);
           },
